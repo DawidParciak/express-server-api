@@ -17,9 +17,7 @@ app.use('/api',concertsRoutes);
 app.use('/api',seatsRoutes);
 
 app.use((req, res) => {
-  res.status(404).send(
-    res.json({ message: 'Not found...' })
-  );
+  res.status(404).send('404 Not found...');
 });
 
 app.listen(8000, () => {
